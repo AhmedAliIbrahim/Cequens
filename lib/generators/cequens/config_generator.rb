@@ -14,7 +14,7 @@ module Cequens
       DESC
 
       def copy_config_file
-        template 'cequens_template.rb', 'config/initializers/cequens.rb'
+        template 'cequens_config.rb', 'config/initializers/cequens.rb'
       end
     end
   end
