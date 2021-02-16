@@ -22,6 +22,10 @@ Or install it yourself as:
 
 ## Usage
 
+configure access token as:
+
+$ rails g cequens config
+
 ### Send SMS
 
 ```ruby
@@ -37,4 +41,3 @@ res = Cequens.send_sms(params)
 
 res.success? # => true
 ```
-
