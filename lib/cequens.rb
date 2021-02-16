@@ -11,6 +11,12 @@ require 'byebug'
 
 module Cequens
   class << self
+    attr_accessor :access_token
+
+    def config
+      yield self
+    end
+
     def send_sms(params, opts = {})
       Request.new('send_sms', params, opts).fire_request
     end

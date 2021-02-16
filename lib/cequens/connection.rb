@@ -8,8 +8,8 @@ module Cequens
     CEQUENS_BASE_URL = 'https://apis.cequens.com/'
 
     class << self
-      def post(path, params, body, options)
-        conn = options[:sandbox] ? sandbox_connection : connection
+      def post(path, params, body, _options)
+        conn = connection
 
         conn.post(path) do |request|
           request.params = params
@@ -22,7 +22,8 @@ module Cequens
       def connection
         @connection ||= Faraday.new(url: CEQUENS_BASE_URL,
                                     headers: { 'Content-Type': 'application/json',
-                                               'Accept': 'application/json' })
+                                               'Accept': 'application/json',
+                                               'Authorization': "Bearer #{Cequens.access_token}" })
       end
     end
   end
