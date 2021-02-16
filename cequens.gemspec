@@ -5,7 +5,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'cequens/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'Cequens'
+  spec.name          = 'cequens'
   spec.version       = Cequens::VERSION
   spec.authors       = ['Ahmed Ali']
   spec.email         = ['ahmed.saraya90@gmail.com']
