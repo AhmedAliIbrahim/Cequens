@@ -7,4 +7,11 @@ require 'rubocop/rake_task'
 RSpec::Core::RakeTask.new(:spec)
 RuboCop::RakeTask.new
 
-task default: :spec
+task :console do
+  require 'irb'
+  require 'irb/completion'
+  require 'cequens'
+
+  ARGV.clear
+  IRB.start
+end

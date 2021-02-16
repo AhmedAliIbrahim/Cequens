@@ -2,6 +2,7 @@
 
 require 'bundler/setup'
 require 'cequens'
+require 'webmock/rspec'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
@@ -13,4 +14,13 @@ RSpec.configure do |config|
   config.expect_with :rspec do |c|
     c.syntax = :expect
   end
+end
+
+def send_sms_request_params
+  {
+    "recipients": '201112018697',
+    "messageText": 'Test from Ahmed',
+    "senderName": 'Cequens',
+    "messageType": 'text'
+  }
 end
