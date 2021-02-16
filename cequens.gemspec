@@ -25,7 +25,7 @@ Gem::Specification.new do |spec|
 
   spec.required_ruby_version = '~> 2.6'
   spec.add_dependency 'dry-validation', '~> 1.6'
-  spec.add_dependency 'faraday', '~> 1.3'
+  spec.add_dependency 'faraday', '~> 0.17'
 
   spec.add_development_dependency 'bundler', '~> 2.0'
   spec.add_development_dependency 'byebug', '~> 11.1'
