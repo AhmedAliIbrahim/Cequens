@@ -9,7 +9,7 @@ module Cequens
         cequens_api_response = Connection.post(request[:path], request[:params], request[:body], request[:options])
         response_body = JSON.parse(cequens_api_response.body)
 
-        CequensResponse.new(response_body)
+        Response.new(response_body)
       end
 
       private

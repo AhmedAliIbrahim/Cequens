@@ -8,8 +8,10 @@ module Cequens
     CEQUENS_BASE_URL = 'https://apis.cequens.com/'
 
     class << self
-      def post(path, params, body)
-        connection.post(path) do |request|
+      def post(path, params, body, options)
+        conn = options[:sandbox] ? sandbox_connection : connection
+
+        conn.post(path) do |request|
           request.params = params
           request.body = body.to_json
         end

@@ -11,5 +11,16 @@ RSpec.describe Cequens::Request do
         expect(cequens_request.request[:body].keys).to eq(send_sms_request_params.keys)
       end
     end
+    describe '#fire' do
+      it 'a send message request' do
+        stub_request(:post, "#{Cequens::Connection::CEQUENS_BASE_URL}sms/v1/messages")
+          .with(body: send_sms_request_params)
+          .to_return(status: 200, body: cequens_api_response)
+        described_class.new('send_sms', send_sms_request_params, {}).fire_request
+
+        expect(WebMock).to have_requested(:post, "#{Cequens::Connection::CEQUENS_BASE_URL}sms/v1/messages")
+          .with(body: send_sms_request_params)
+      end
+    end
   end
 end

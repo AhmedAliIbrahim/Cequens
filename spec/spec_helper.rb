@@ -21,6 +21,24 @@ def send_sms_request_params
     "messageText": 'Test from Ahmed',
     "senderName": 'Cequens',
     "messageType": 'text',
-    "recipients": '201112018697'
+    "recipients": '2011111111'
   }
 end
+
+# rubocop:disable Metrics/MethodLength
+
+def cequens_api_response
+  {
+    'replyCode' => 0,
+    'replyMessage' => 'Request handled successfully',
+    'requestId' => 'dd5fa290-6ecf-11eb-a64b-c1de67d616f8',
+    'clientRequestId' => 0,
+    'requestTime' => '2021-02-14T14:21:01.625',
+    'data' => {
+      'SentSMSIDs' => [{ "SMSId": 'f6ad03d3-c6ab-435b-98c1-b5079847f367' }],
+      'InvalidRecipients' => ''
+    }
+  }.to_json
+end
+
+# rubocop:enable Metrics/MethodLength

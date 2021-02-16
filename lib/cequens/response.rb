@@ -6,8 +6,6 @@ module Cequens
 
     def initialize(api_response)
       @api_response = api_response
-
-      build_response
     end
 
     def success?

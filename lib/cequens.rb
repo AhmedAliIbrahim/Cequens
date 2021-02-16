@@ -7,6 +7,7 @@ require 'cequens/request'
 require 'cequens/response'
 require 'cequens/requests/send_sms_request'
 require 'cequens/contracts/send_sms_contract'
+require 'byebug'
 
 module Cequens
   class << self
