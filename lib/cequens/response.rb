@@ -9,7 +9,7 @@ module Cequens
     end
 
     def success?
-      status_code == 200
+      api_response_body['replyCode'].zero?
     end
 
     def failure?
@@ -18,6 +18,10 @@ module Cequens
 
     def api_response_body
       api_response
+    end
+
+    def message
+      api_response_body['replyMessage']
     end
   end
 end
