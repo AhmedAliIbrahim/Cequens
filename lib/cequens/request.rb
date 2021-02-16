@@ -21,7 +21,7 @@ module Cequens
       when 'send_sms'
         self.class.include Requests::SendSMSRequest
         validate_params!
-        @request = build_request
+        @request = build_send_sms_request
       end
     end
   end

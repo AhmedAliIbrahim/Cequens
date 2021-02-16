@@ -14,7 +14,7 @@ module Cequens
 
       private
 
-      def build_request
+      def build_send_sms_request
         {
           path: 'sms/v1/messages',
           params: {},

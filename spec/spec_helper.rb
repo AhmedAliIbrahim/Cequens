@@ -18,9 +18,9 @@ end
 
 def send_sms_request_params
   {
-    "recipients": '201112018697',
     "messageText": 'Test from Ahmed',
     "senderName": 'Cequens',
-    "messageType": 'text'
+    "messageType": 'text',
+    "recipients": '201112018697'
   }
 end
