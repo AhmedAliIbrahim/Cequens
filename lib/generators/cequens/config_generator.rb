@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'rails/generators'
+
 module Cequens
   module Generators
     # rails g Cequens:config
@@ -12,7 +14,7 @@ module Cequens
       DESC
 
       def copy_config_file
-        template 'cequens_config.rb', 'config/initializers/cequens_config.rb'
+        template 'cequens_template.rb', 'config/initializers/cequens.rb'
       end
     end
   end
