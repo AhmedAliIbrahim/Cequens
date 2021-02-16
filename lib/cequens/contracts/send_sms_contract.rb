@@ -11,17 +11,17 @@ module Cequens
         required(:recipients).value(:string)
         required(:messageText).value(:string)
         required(:senderName).value(:string)
-        required(:messageType).value(:string)
+        required(:messageType).value(included_in?: MESSAGE_TYPE)
         optional(:validityPeriod).value(:string)
         optional(:clientMessageId).value(:integer)
-        optional(:acknowledgement).value(:integer)
+        optional(:acknowledgement).value(included_in?: KEYS)
         optional(:deliveryTime).value(:string)
         optional(:ip).value(:string)
         optional(:dlrUrl).value(:string)
         optional(:dateStamp).value(:integer)
         optional(:udh).value(:string)
         optional(:dataCoding).value(:integer)
-        optional(:flashing).value(:integer)
+        optional(:flashing).value(included_in?: KEYS)
       end
     end
   end
