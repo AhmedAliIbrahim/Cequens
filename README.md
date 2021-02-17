@@ -24,10 +24,10 @@ Or install it yourself as:
 
 configure access token as:
 
-    $ rails g cequens config
+    $ rails g cequens:config
 
-    Cequens.configure do |config|
-    # config.access_token = token # add your access token
+    Cequens.config do |c|
+    # c.access_token = token # add your access token
     end
 
 ### Send SMS
