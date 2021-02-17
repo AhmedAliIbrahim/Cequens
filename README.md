@@ -1,8 +1,8 @@
 # Cequens
 
-**Disclaimer:** we are not officially affilated with the Cequens company.
+**Disclaimer:** we are not officially affilated with Cequens company.
 
-A plug-and-play library that make it easier to use with Cequens SMS APIs
+A plug-and-play library that make it easier to use Cequens SMS APIs
 
 ## Installation
 
@@ -27,7 +27,8 @@ configure access token as:
     $ rails g cequens:config
 
     Cequens.config do |c|
-    # c.access_token = token # add your access token
+    # c.access_token = token # add your access token not api token 
+    # access_token is what you get when you login
     end
 
 ### Send SMS
