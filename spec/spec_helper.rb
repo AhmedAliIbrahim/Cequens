@@ -23,6 +23,14 @@ def send_sms_request_params
   {
     "messageText": 'Test from Ahmed',
     "senderName": 'Cequens',
+    "recipients": '2011111111'
+  }
+end
+
+def send_sms_request_all_params
+  {
+    "messageText": 'Test from Ahmed',
+    "senderName": 'Cequens',
     "messageType": 'text',
     "recipients": '2011111111'
   }

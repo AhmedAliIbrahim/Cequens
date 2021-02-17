@@ -3,7 +3,7 @@
 module Cequens
   module Requests
     module SendSMSRequest
-      DEFAULTS = {}.freeze
+      DEFAULTS = { messageType: 'text' }.freeze
 
       def fire_request
         cequens_api_response = Connection.post(request[:path], request[:params], request[:body], request[:options])
