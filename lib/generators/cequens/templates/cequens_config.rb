@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
-Cequens.configure do |config|
-  # config.access_token = token
+Cequens.config do |c|
+  # c.access_token = token
 end
