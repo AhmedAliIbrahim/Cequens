@@ -53,3 +53,9 @@ def cequens_api_response
 end
 
 # rubocop:enable Metrics/MethodLength
+
+def sms_details_request_params
+  {
+    "id": '1233455'
+  }
+end
