@@ -27,6 +27,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'dry-validation', '~> 1.6'
   spec.add_dependency 'faraday', '~> 0.17'
 
+  spec.add_development_dependency 'brakeman', '~> 5.0'
   spec.add_development_dependency 'bundler', '~> 2.0'
   spec.add_development_dependency 'byebug', '~> 11.1'
   spec.add_development_dependency 'rails', '~> 6.1'
