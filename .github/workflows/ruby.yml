@@ -19,4 +19,7 @@ jobs:
       run: rubocop
     - name: Run tests
       run: bundle exec rake spec
+    - name: Brakeman action
+      uses: artplan1/brakeman-action@v1.2.1
+
 
