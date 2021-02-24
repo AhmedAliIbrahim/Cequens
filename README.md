@@ -1,6 +1,6 @@
 # Cequens
 
-**Disclaimer:** we are not officially affilated with Cequens company.
+**Disclaimer:** we are not officially affilated with [Cequens](https://developer.cequens.com) company.
 
 A plug-and-play library that make it easier to use Cequens SMS APIs
 
