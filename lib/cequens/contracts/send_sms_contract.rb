@@ -10,8 +10,8 @@ module Cequens
       params do
         required(:recipients).value(:string)
         required(:messageText).value(:string)
-        required(:senderName).value(:string)
         required(:messageType).value(included_in?: MESSAGE_TYPE)
+        optional(:senderName).value(:string)
         optional(:validityPeriod).value(:string)
         optional(:clientMessageId).value(:integer)
         optional(:acknowledgement).value(included_in?: KEYS)

@@ -17,12 +17,18 @@ RSpec.configure do |config|
   config.expect_with :rspec do |c|
     c.syntax = :expect
   end
+
+  config.before(:all) do
+    Cequens.config do |c|
+      c.access_token = 'access_token'
+      c.sender_name = 'Cequens'
+    end
+  end
 end
 
 def send_sms_request_params
   {
     "messageText": 'Test from Ahmed',
-    "senderName": 'Cequens',
     "recipients": '2011111111'
   }
 end

@@ -14,7 +14,7 @@ require 'byebug'
 
 module Cequens
   class << self
-    attr_accessor :access_token
+    attr_accessor :access_token, :sender_name
 
     def config
       yield self

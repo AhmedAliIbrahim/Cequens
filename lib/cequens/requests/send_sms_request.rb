@@ -32,7 +32,7 @@ module Cequens
       def request_transformed_params
         {
           messageText: request_params[:messageText],
-          senderName: request_params[:senderName],
+          senderName: sender_name,
           messageType: request_params[:messageType],
           recipients: request_params[:recipients],
           clientMessageId: request_params[:clientMessageId],
@@ -46,6 +46,15 @@ module Cequens
           dataCoding: request_params[:dataCoding],
           flashing: request_params[:flashing]
         }.compact
+      end
+
+      def sender_name
+        if request_params[:sender_name].nil?
+          request_params[:sender_name] =
+            Cequens.sender_name
+        else
+          request_params[:sender_name]
+        end
       end
 
       # rubocop:enable Metrics/AbcSize
