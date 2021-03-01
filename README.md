@@ -29,6 +29,7 @@ configure access token as:
     Cequens.config do |c|
     # c.access_token = token # add your access token not api token
     # access_token is what you get when you login
+    # c.sender_name = sender_name
     end
 
 ### Send SMS
