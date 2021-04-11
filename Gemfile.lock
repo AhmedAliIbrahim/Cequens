@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    cequens (0.0.7)
+    cequens (0.0.8)
       dry-validation (~> 1.6)
       faraday (~> 0.17)
 
@@ -128,7 +128,9 @@ GEM
     marcel (0.3.3)
       mimemagic (~> 0.3.2)
     method_source (1.0.0)
-    mimemagic (0.3.5)
+    mimemagic (0.3.10)
+      nokogiri (~> 1)
+      rake
     mini_mime (1.0.2)
     mini_portile2 (2.5.0)
     minitest (5.14.3)
