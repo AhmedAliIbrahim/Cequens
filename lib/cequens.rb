@@ -10,7 +10,6 @@ require 'cequens/contracts/send_sms_contract'
 require 'cequens/requests/get_sms_details_request'
 require 'cequens/contracts/get_sms_details_contract'
 require 'rails'
-require 'byebug'
 
 module Cequens
   class << self
