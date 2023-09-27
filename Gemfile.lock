@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    cequens (0.0.9)
+    cequens (0.1.2)
       dry-validation (~> 1.6)
       faraday (~> 1.8)
 
@@ -250,7 +250,7 @@ DEPENDENCIES
   brakeman (~> 5.0)
   bundler (~> 2.0)
   cequens!
-  rails (~> 6.1)
+  rails (>= 6.1)
   rake (~> 13.0)
   rspec (~> 3.10)
   rspec_junit_formatter (~> 0.4)
