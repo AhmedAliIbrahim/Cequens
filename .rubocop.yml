@@ -1,8 +1,8 @@
 AllCops:
-  TargetRubyVersion: 2.7
+  TargetRubyVersion: 3.0
 Metrics/LineLength:
   Max: 120
 Metrics/BlockLength:
-  ExcludedMethods: ['describe', 'context']
+  ExcludedMethods: ["describe", "context"]
 Style/Documentation:
   Enabled: false
