@@ -3,7 +3,7 @@ PATH
   specs:
     cequens (0.1.2)
       dry-validation (~> 1.6)
-      faraday (~> 2.8)
+      faraday (>= 2.8)
 
 GEM
   remote: https://rubygems.org/
@@ -252,4 +252,4 @@ DEPENDENCIES
   webmock (~> 3.11)
 
 BUNDLED WITH
-   2.2.15
+   2.2.33
