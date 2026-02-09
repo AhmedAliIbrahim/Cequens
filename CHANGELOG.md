@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - CI/CD testing for Ruby versions 3.0, 3.1, 3.2, 3.3, and 4.0
 - LICENSE file (MIT)
 - CHANGELOG.md
+- Logger dependency (required for Ruby 4.0 compatibility)
 
 ### Changed
 - Updated required Ruby version to support both Ruby 3.x and 4.x
