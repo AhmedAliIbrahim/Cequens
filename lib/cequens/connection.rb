@@ -24,8 +24,8 @@ module Cequens
       def connection
         @connection ||= Faraday.new(url: CEQUENS_BASE_URL,
                                     headers: { 'Content-Type': 'application/json',
-                                               'Accept': 'application/json',
-                                               'Authorization': "Bearer #{Cequens.access_token}" })
+                                               Accept: 'application/json',
+                                               Authorization: "Bearer #{Cequens.access_token}" })
       end
     end
   end

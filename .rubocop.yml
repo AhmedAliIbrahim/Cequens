@@ -1,8 +1,9 @@
 AllCops:
   TargetRubyVersion: 3.0
-Metrics/LineLength:
+  NewCops: enable
+Layout/LineLength:
   Max: 120
 Metrics/BlockLength:
-  ExcludedMethods: ["describe", "context"]
+  IgnoredMethods: ["describe", "context"]
 Style/Documentation:
   Enabled: false

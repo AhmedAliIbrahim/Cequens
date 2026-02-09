@@ -28,17 +28,17 @@ end
 
 def send_sms_request_params
   {
-    "messageText": 'Test from Ahmed',
-    "recipients": '2011111111'
+    messageText: 'Test from Ahmed',
+    recipients: '2011111111'
   }
 end
 
 def send_sms_request_all_params
   {
-    "messageText": 'Test from Ahmed',
-    "senderName": 'Cequens',
-    "messageType": 'text',
-    "recipients": '2011111111'
+    messageText: 'Test from Ahmed',
+    senderName: 'Cequens',
+    messageType: 'text',
+    recipients: '2011111111'
   }
 end
 
@@ -52,7 +52,7 @@ def cequens_api_response
     'clientRequestId' => 0,
     'requestTime' => '2021-02-14T14:21:01.625',
     'data' => {
-      'SentSMSIDs' => [{ "SMSId": 'f6ad03d3-c6ab-435b-98c1-b5079847f367' }],
+      'SentSMSIDs' => [{ SMSId: 'f6ad03d3-c6ab-435b-98c1-b5079847f367' }],
       'InvalidRecipients' => ''
     }
   }.to_json
@@ -62,6 +62,6 @@ end
 
 def sms_details_request_params
   {
-    "id": '1233455'
+    id: '1233455'
   }
 end
