@@ -1,6 +1,11 @@
 # frozen_string_literal: true
 
-require 'rails/generators'
+begin
+  require 'rails/generators'
+rescue LoadError
+  # Rails not available, generator won't be loaded
+  return
+end
 
 module Cequens
   module Generators

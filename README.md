@@ -7,7 +7,7 @@ A plug-and-play library that make it easier to use Cequens SMS APIs
 ## Requirements
 
 - Ruby 3.0+ or Ruby 4.0+
-- **Note:** Rails generator is only available for Ruby < 4.0 (Rails 6.1 doesn't support Ruby 4 yet)
+- Rails (optional, only required for the configuration generator)
 
 ## Installation
 
@@ -29,12 +29,16 @@ Or install it yourself as:
 
 configure access token as:
 
+### With Rails (using generator)
+
     $ rails g cequens:config
 
+### Without Rails (manual configuration)
+
     Cequens.config do |c|
-    # c.access_token = token # add your access token not api token
-    # access_token is what you get when you login
-    # c.sender_name = sender_name
+      c.access_token = 'your_access_token' # add your access token not api token
+      # access_token is what you get when you login
+      c.sender_name = 'your_sender_name'
     end
 
 ### Send SMS

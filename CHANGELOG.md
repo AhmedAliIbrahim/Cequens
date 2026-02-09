@@ -17,15 +17,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Updated required Ruby version to support both Ruby 3.x and 4.x
 - Updated GitHub Actions to use checkout@v4
 - Updated RuboCop target Ruby version to 3.0
-- Made Rails dependency conditional (Ruby < 4.0) as Rails 6.1 doesn't support Ruby 4 yet
-- Made generator tests conditional on Ruby < 4.0
+- Made Rails an optional dependency (only needed for the generator)
+- Made generator gracefully handle absence of Rails
 
 ### Fixed
 - Removed hard dependency on Rails (was breaking non-Rails usage)
 - Fixed incorrect comment in Gemfile
 
 ### Notes
-- Ruby 4.0 support: Core SMS functionality works, but Rails generators require Ruby < 4.0
+- Ruby 4.0 fully supported for all core functionality
+- Rails generator works with any Ruby version when Rails is installed
 
 ## [0.1.2] - Previous Release
 
