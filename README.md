@@ -4,6 +4,11 @@
 
 A plug-and-play library that make it easier to use Cequens SMS APIs
 
+## Requirements
+
+- Ruby 3.0+ or Ruby 4.0+
+- **Note:** Rails generator is only available for Ruby < 4.0 (Rails 6.1 doesn't support Ruby 4 yet)
+
 ## Installation
 
 Add this line to your application's Gemfile:
