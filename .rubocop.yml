@@ -1,9 +1,14 @@
 AllCops:
   TargetRubyVersion: 3.0
   NewCops: enable
+  SuggestExtensions: false
 Layout/LineLength:
   Max: 120
 Metrics/BlockLength:
-  IgnoredMethods: ["describe", "context"]
+  AllowedMethods: ["describe", "context"]
 Style/Documentation:
+  Enabled: false
+Gemspec/DevelopmentDependencies:
+  Enabled: false
+Gemspec/RequireMFA:
   Enabled: false

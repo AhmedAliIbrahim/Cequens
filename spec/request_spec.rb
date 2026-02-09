@@ -5,7 +5,7 @@ RSpec.describe Cequens::Request do
     describe '.new' do
       it 'builds the correct send sms request' do
         cequens_request = described_class.new('send_sms', send_sms_request_params, {})
-        expect(cequens_request.class.included_modules.include?(Cequens::Requests::SendSMSRequest)).to be true
+        expect(cequens_request.class.include?(Cequens::Requests::SendSMSRequest)).to be true
         expect(cequens_request.action).to eq('send_sms')
         expect(cequens_request.request[:path]).to eq('sms/v1/messages')
         expect(cequens_request.request[:body].keys).to eq(send_sms_request_all_params.keys)
@@ -28,7 +28,7 @@ RSpec.describe Cequens::Request do
     describe '.new' do
       it 'builds the correct get sms details request' do
         cequens_request = described_class.new('get_sms_details', sms_details_request_params, {})
-        expect(cequens_request.class.included_modules.include?(Cequens::Requests::GetSMSDetailsRequest)).to be true
+        expect(cequens_request.class.include?(Cequens::Requests::GetSMSDetailsRequest)).to be true
         expect(cequens_request.action).to eq('get_sms_details')
         expect(cequens_request.request[:path]).to eq("sms/v1/messages/#{sms_details_request_params[:id]}")
       end

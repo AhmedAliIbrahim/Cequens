@@ -29,9 +29,10 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency 'brakeman', '~> 5.0'
   spec.add_development_dependency 'bundler', '>= 2.2', '< 3.0'
+  spec.add_development_dependency 'racc', '~> 1.7'
   spec.add_development_dependency 'rake', '~> 13.0'
   spec.add_development_dependency 'rspec', '~> 3.10'
   spec.add_development_dependency 'rspec_junit_formatter', '~> 0.4'
-  spec.add_development_dependency 'rubocop', '~> 1.10'
+  spec.add_development_dependency 'rubocop', '~> 1.50'
   spec.add_development_dependency 'webmock', '~> 3.11'
 end
